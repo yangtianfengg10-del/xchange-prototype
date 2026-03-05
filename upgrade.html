@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Upgrade • Xchange</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-auth="0">
+  <div id="app-header"></div>
+  <main class="container" style="padding: 18px 0 6px">
+    
+<div id="upgradeWrap"><div class="split">
+  <div class="card"><div class="pad">
+    <div class="h2">Upgrade</div>
+    <div class="muted">Plans for Xchange.</div>
+
+    <hr class="sep" />
+
+    <div class="grid3">
+      <div class="feature">
+        <b>Free</b>
+        <div class="muted">Teacher: up to 2 courses · up to 3 groups</div>
+        <div class="muted">Students can learn normally</div>
+      </div>
+
+      <div class="feature">
+        <b>Creator — $8/month</b>
+        <div class="muted">Teacher: up to 10 courses · up to 10 groups</div>
+        <div class="muted">Best for active creators</div>
+      </div>
+
+      <div class="feature">
+        <b>Campus custom</b>
+        <div class="muted">Universities/schools can discuss business with us.</div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="feature">
+      <b>Your current plan</b>
+      <div class="muted">Plan: <b id="currentPlan" style="color:var(--text)">—</b></div>
+      <div class="muted" id="planNote" style="margin-top:6px">Login to see your plan.</div>
+      <div class="spacer"></div>
+      <button class="btn primary" id="upgradeCreatorBtn">Upgrade to Creator (demo)</button>
+    </div>
+
+    <div class="spacer"></div>
+    <div id="teachingLimits"></div>
+  </div></div>
+
+  <div class="card"><div class="pad">
+    <div class="h2">Buy coins</div>
+    <div class="muted">Choose a coin pack → it takes you to the Transaction page (demo).</div>
+    <hr class="sep" />
+
+    <div id="buyCoins" class="row">
+      <button class="btn" data-amount="20">Buy 20 coins</button>
+      <button class="btn" data-amount="50">Buy 50 coins</button>
+      <button class="btn" data-amount="100">Buy 100 coins</button>
+      <button class="btn primary" data-amount="200">Buy 200 coins</button>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="h2">Recent coin purchases</div>
+    <div id="coinHistory"></div>
+
+    <hr class="sep" />
+    <div class="muted" style="font-size:13px">
+      Note: 1 coin = $1. New users start with 50 coins.
+    </div>
+  </div></div>
+</div></div>
+
+  </main>
+  <div id="app-footer"></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

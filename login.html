@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login • Xchange</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-auth="0">
+  <div id="app-header"></div>
+  <main class="container" style="padding: 18px 0 6px">
+    
+<div class="split">
+  <div class="card"><div class="pad">
+    <div class="h2">Login</div>
+    <div class="muted">University prototype: use demo accounts (no real signup).</div>
+
+    <hr class="sep" />
+
+    <form id="loginForm" class="form">
+      <div>
+        <label>Username</label>
+        <input class="input" id="username" placeholder="e.g., student1" required />
+      </div>
+      <div>
+        <label>Password</label>
+        <input class="input" id="password" type="password" placeholder="••••••••" required />
+      </div>
+      <button class="btn primary" type="submit">Login</button>
+    </form>
+
+    <div class="spacer"></div>
+
+    <div class="feature">
+      <b>Why demo accounts?</b>
+      <div class="muted">
+        For a prototype, we keep it simple: 3 accounts already exist. All data is stored in your browser.
+      </div>
+    </div>
+  </div></div>
+
+  <div class="card"><div class="pad">
+    <div class="h2">Quick fill demo accounts</div>
+    <div class="muted">Click to auto-fill username & password.</div>
+
+    <hr class="sep" />
+
+    <div id="demoButtons" class="form">
+      <button class="btn" type="button" data-user="student1" data-pass="pass123">Student (student1)</button>
+      <button class="btn" type="button" data-user="teacher1" data-pass="teach123">Teacher (teacher1)</button>
+      <button class="btn primary" type="button" data-user="hybrid1" data-pass="hybrid123">Teacher & Student (hybrid1)</button>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="feature">
+      <b>Exchange access</b>
+      <div class="muted">Only <b style="color:var(--text)">Teacher & Student</b> accounts can access the Exchange category in Skills.</div>
+    </div>
+  </div></div>
+</div>
+
+  </main>
+  <div id="app-footer"></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
